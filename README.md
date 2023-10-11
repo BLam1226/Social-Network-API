@@ -22,6 +22,10 @@ Challenge for week 18 module for UPenn LPS Full Stack Coding Bootcamp. This is a
 ## Usage
 You can test and interact with the API using open source desktop applications like Insomnia Dev Tool.
 
+
+https://github.com/BLam1226/Social-Network-API/assets/127125695/1b0ea3ca-0e83-4cce-a093-e27f9cfb8159
+
+
 ## API-Endpoints
 - `GET /api/users`: Get a list of all users.
 - `GET /api/users/:userId`: Get a specific user by their ID.
