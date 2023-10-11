@@ -8,6 +8,7 @@ const userController = {
       .then((users) => res.json(users))
       .catch((err) => res.status(500).json(err));
   },
+
   // create user
   createUser(req, res) {
     User.create(req.body)
@@ -50,6 +51,7 @@ const userController = {
       .then(() => res.json({ message: "User and associated apps deleted!" }))
       .catch((err) => res.status(500).json(err));
   },
+
   // getUserById,
   getUserById(req, res) {
     User.findOne({ _id: req.params.id })
@@ -60,6 +62,7 @@ const userController = {
       )
       .catch((err) => res.status(500).json(err));
   },
+
   // addFriend
   addFriend(req, res) {
     console.log("You are adding a friend");
@@ -85,6 +88,7 @@ const userController = {
       )
       .catch((err) => res.status(500).json(err));
   },
+
   // removeFriend
   removeFriend(req, res) {
     User.findOneAndUpdate(
