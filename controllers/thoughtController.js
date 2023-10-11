@@ -8,6 +8,7 @@ const thoughtController = {
       .then((thought) => res.json(thought))
       .catch((err) => res.status(500).json(err));
   },
+
   // create thought to a user
   createThought(req, res) {
     Thought.create(req.body)
@@ -21,6 +22,7 @@ const thoughtController = {
       .then((userData) => res.json(userData))
       .catch((err) => res.status(500).json(err));
   },
+
   //update thought by it's id
   updateThought(req, res) {
     Thought.findOneAndUpdate(
@@ -77,6 +79,7 @@ const thoughtController = {
       .then(() => res.json({ message: "User and associated apps deleted!" }))
       .catch((err) => res.status(500).json(err));
   },
+
   // add Reaction
   addReaction(req, res) {
     console.log("You are adding a reaction");
@@ -95,7 +98,6 @@ const thoughtController = {
   },
 
   //delete Reaction
-
   deleteReaction(req, res) {
     console.log(req.params);
 
